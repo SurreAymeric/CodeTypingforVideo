@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Réécriture de code avec animation</title>
+  <link id="prism-theme" rel="stylesheet" href="prism-default.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="menu-toggle" class="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div id="menu" class="menu">
+    <ul class="menu-items">
+      <li><button id="theme-default" class="theme-button">Default</button></li>
+      <li><button id="theme-dark" class="theme-button">Dark</button></li>
+    </ul>
+  </div>
+
+  <div class="top-content">
+    <div class="code-container">
+      <textarea id="code-input" class="code-input" placeholder="Collez votre code ici"></textarea>
+      <button id="start-button" class="start-button">Démarrer</button>
+      <div class="code-output-container">
+        <button id="fullscreen-button" class="fullscreen-button">Plein écran</button>
+        <pre id="code-output" class="code-output"><code class="language-javascript"></code></pre>
+      </div>
+    </div>
+  </div>
+
+  <script src="prism.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
