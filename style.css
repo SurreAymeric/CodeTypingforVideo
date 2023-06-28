@@ -114,10 +114,13 @@ body {
     font-size: 14px;
     display: flex;
     flex-direction: column;
+    overflow-x: auto; /* Ajout de la propriété overflow-x */
+    max-width: 100%; /* Ajout de la propriété max-width */
   }
   
   .code-output {
-    flex-grow: 1;
-    overflow: auto;
+    height: calc(100% - 50px);
+    white-space: pre-wrap;
   }
+  
   
